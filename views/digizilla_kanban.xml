@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_digizilla_kanban" model="ir.ui.view">
+            <field name="name">digizilla.kanban.view</field>
+            <field name="model">digizilla</field>
+            <field name="arch" type="xml">
+                <kanban class="o_kanban_mobile">
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div class="oe_kanban_content">
+                                <div>
+                                    <field name="name"/>
+                                    <field name="gender"/>
+                                    <field name="country"/>
+                                    <field name="joining_date"/>
+                                    <field name="tags"/>
+                                    <field name="customers"/>
+                                    <field name="company_id"/>
+                                    <field name="notes"/>
+                                    <field name="comments"/>
+                                </div>
+                            </div>
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
+
+    </data>
+</odoo>

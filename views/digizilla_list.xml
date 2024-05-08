@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_digizilla_list" model="ir.ui.view">
+            <field name="name">digizilla.list.view</field>
+            <field name="model">digizilla</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="gender"/>
+                    <field name="country"/>
+                    <field name="joining_date"/>
+                    <field name="tags"/>
+                    <field name="customers"/>
+                    <field name="company_id"/>
+                    <field name="notes"/>
+                    <field name="comments"/>
+                </tree>
+            </field>
+        </record>
+
+    </data>
+</odoo>
