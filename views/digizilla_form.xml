@@ -5,18 +5,29 @@
             <field name="name">digizilla.form.view</field>
             <field name="model">digizilla</field>
             <field name="arch" type="xml">
-                <form string="Digizilla Form">
-                    <group>
-                        <field name="name"/>
-                        <field name="gender"/>
-                        <field name="country"/>
-                        <field name="joining_date"/>
-                        <field name="tags"/>
-                        <field name="customers"/>
-                        <field name="company_id"/>
-                        <field name="notes"/>
-                        <field name="comments"/>
-                    </group>
+                <form string="Digizilla Form " create="0">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="gender"/>
+                            <field name="country"/>
+                            <field name="joining_date"/>
+                            <field name="tags"/>
+                            <field name="customers"/>
+                            <field name="company_id"/>
+                        </group>
+                        <notebook>
+                            <page string="Notes and Comments">
+                                <group>
+                                    <field name="notes"/>
+                                    <field name="comments"/>
+                                </group>
+                            </page>
+                        </notebook>
+                    <sheet/>
+                    <div class="oe_chatter">
+                        <field name="message_ids"/>
+                    </div>
                 </form>
             </field>
         </record>
